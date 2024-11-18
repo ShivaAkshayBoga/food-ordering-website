@@ -1,0 +1,97 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: white;
+    padding: 0 20px;
+    height: 60px;
+    color: rgba(65, 59, 59, 0.83);
+}
+
+.navbar-logo{
+    font-family: 'Dancing Script',cursive;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+.nav-links a{
+     color: rgba(65, 59, 59, 0.83);
+     text-decoration: none;  
+     transition: all 0.3s;
+}
+.nav-links a:hover{
+    color: #f4673c; 
+}
+
+.nav-icon{
+    color: rgba(65, 59, 59, 0.83);
+    cursor: pointer;
+    position: relative;
+}
+.order-button{
+    background-color: #f4673c;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+.order-button:hover{
+    background-color: #f4673c;
+
+}
+
+.mobile-menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        margin-bottom: 10px;
+        z-index: 1;
+    }
+    .mobile-menu-icon{
+        display: flex;
+        align-items: center;
+    }
+    .nav-links-mobile a {
+        color:  rgba(65, 59, 59, 0.83);
+        text-decoration: none;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-icon{
+        margin-bottom: 10px;
+
+    }
+    .nav-links-mobile a:hover{
+        color: #f4673c;
+    }
+    .order-button{
+        margin-top: 10px;
+
+    }
+}
+ 
